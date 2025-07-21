@@ -14,7 +14,7 @@ app.use(express.json());
 app.post('/login', (req, res) => {
   const { email, password } = req.body;
 
-  if (email === 'user@example.com' && password === 'password123') {
+  if (email === 'omprakash@gmail.com' && password === 'password123') {
     res.json({ success: true, message: 'Login successful!' });
   } else {
     res.status(401).json({ success: false, message: 'Invalid email or password.' });
@@ -26,7 +26,7 @@ app.post('/forgot-password', (req, res) => {
   const { email } = req.body;
 
   
-  if (email === 'user@example.com') {
+  if (email === 'omprakash@gmail.com') {
     
     res.json({ success: true, message: 'A password reset link has been sent to your email.' });
   } else {
